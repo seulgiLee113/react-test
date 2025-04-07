@@ -15,10 +15,8 @@ const reducer = (state, action) => {
         case "LIST" : 
             return {...state, data : action.data}
         case "LOADING" : 
-            console.log('-----loading-----')
             return { ...state, loading : true, error : null}
-        case "FINISHED" : 
-            console.log('-----finished-----')
+            case "FINISHED" : 
             return { ...state, loading : false, error : null}
         case "ERROR" : 
             return {...state, loading : false, error : action.error}

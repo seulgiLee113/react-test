@@ -18,8 +18,10 @@ const MemberOneCon = () => {
     const [state, dispatch] = useReducer(reducer, initialState);
 
     useEffect( () => {
+        dispatch({type: "LOADING"})
         const id = params.get("id");
         setUserData(getOne(id));
+        dispatch({type: "FINISHED"})
     }, [params]);
 
     const navigate = useNavigate();
