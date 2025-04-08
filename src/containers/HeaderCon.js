@@ -7,7 +7,7 @@ const HeaderCon = () => {
     const {auth, logout} = useContext(AuthContext);
 
     const onLogout = (e) => {
-        console.log("----로그아웃----")
+        // console.log("----로그아웃----")
         e.preventDefault()
         logout();
     }

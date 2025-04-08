@@ -22,7 +22,7 @@ const ListCon = () => {
         
     }, [])
     
-    console.log("ListCon....state : ", state);
+    // console.log("ListCon....state : ", state);
     
     return (
         <>

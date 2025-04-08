@@ -13,14 +13,11 @@ const loginCheck = (id, pwd) => {
 
     if(data.length !== 0){
         if(data[0].pwd === pwd){
-            console.log("-로그인 성공-")
             return 0
         } else {
-            console.log("-비밀번호 틀림-")
             return 1
         }
     } else {
-        console.log("-존재하지 않는 id-")
         return -1
     }
 
